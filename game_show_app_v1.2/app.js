@@ -4,11 +4,11 @@ const reset = document.getElementsByClassName("btn__reset")[0];
 let missed = 0;
 
 const phrases = [
-  'Polo likes to fight',
-  'Gohan is a problem child',
-  'Nala is a crybaby',
-  'Shaggy likes weed',
-  'Luffy is an angry dog'
+  'Polo likes to bites other dogs',
+  'Gohan is a strong dog',
+  'Nala barks a lot',
+  'Shaggy plays with other dogs',
+  'Luffy is an old dog'
 ];
 
 reset.addEventListener('click', () => {
