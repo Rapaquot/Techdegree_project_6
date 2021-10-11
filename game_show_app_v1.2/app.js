@@ -29,6 +29,7 @@ function addPhraseToDisplay(arrayofletters){
   arrayofletters.forEach(element =>
     let li = document.createElement("li");
     li.textContent = element;
+    phrase.append(li);
     if (element !== " "){
       li.className = "letter":
     } else {
