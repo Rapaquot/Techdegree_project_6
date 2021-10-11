@@ -22,10 +22,17 @@ function getRandomPhraseAsArray(arr){
   return phrases[randomNumber];
 };
 
-getRandomPhraseAsArray(phrases);
+const randomPhrase = getRandomPhraseAsArray(phrases);
+const randomPhraseSplit = randomPhrase.split('');
 
-function addPhraseToDisplay() {
-  for(let i = 0; i < getRandomPhraseAsArray.length; i++){
-    console.log('I love myself');
-  };
+function addPhraseToDisplay(arrayofletters){
+  arrayofletters.forEach(element =>
+    let li = document.createElement("li");
+    li.textContent = element;
+    if (element !== " "){
+      li.className = "letter":
+    } else {
+      li.className = "space"
+    }
 };
+addPhraseToDisplay(randomPhraseSplit);
