@@ -26,14 +26,29 @@ const randomPhrase = getRandomPhraseAsArray(phrases);
 const randomPhraseSplit = randomPhrase.split('');
 
 function addPhraseToDisplay(arrayofletters){
-  arrayofletters.forEach(element =>
+  arrayofletters.forEach(element => {
     let li = document.createElement("li");
     li.textContent = element;
     phrase.append(li);
     if (element !== " "){
-      li.className = "letter":
+      li.className = "letter";
     } else {
-      li.className = "space"
+      li.className = "space";
     }
+  })
 };
 addPhraseToDisplay(randomPhraseSplit);
+
+function checkLetter(button){
+  let listItems = document.getElementsByTagName('li');
+  let match = null;
+  for(let i = 0; i < listItems.length; i++){
+    if(button === listItems.textContent){
+        listItems.className = 'show';
+        match = button;
+    }
+  }
+  return match;
+};
+
+checkLetter();
