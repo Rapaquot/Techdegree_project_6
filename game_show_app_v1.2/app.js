@@ -42,7 +42,7 @@ addPhraseToDisplay(randomPhraseSplit);
 function checkLetter(button){
   let listItems = document.getElementsByTagName('li');
   let match = null;
-  for(let i = 0; i < listItems.length; i++){
+  for(let i = 0; i < listItems[i]; i++){
     if(button === listItems.textContent){
         listItems.className = 'show';
         match = button;
