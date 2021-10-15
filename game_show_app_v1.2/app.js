@@ -52,10 +52,14 @@ function checkLetter(button){
 };
 
 
-// 
-// qwerty.addEventListener('click', (event) => {
-//   if(event.target.tagName = 'BUTTON' || event.target.className = 'chosen'){
-//       const button = event.target.className = 'chosen';
-//       const checkLetters = checkLetter();
-//   }
-// })
+
+qwerty.addEventListener('click', (event) => {
+  if(event.target.tagName = 'BUTTON'){
+      event.target.className = 'chosen';
+  }
+    const checkLetters = checkLetter(event.target);
+    if(checkLetters){
+      missed++
+      console.log(missed);
+    }
+})
