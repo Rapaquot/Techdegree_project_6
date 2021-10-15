@@ -42,13 +42,20 @@ addPhraseToDisplay(randomPhraseSplit);
 function checkLetter(button){
   let listItems = document.getElementsByTagName('li');
   let match = null;
-  for(let i = 0; i < listItems[i]; i++){
-    if(button === listItems.textContent){
-        listItems.className = 'show';
+  for(let i = 0; i < listItems.length; i++){
+    if(button === listItems[i].textContent){
+        listItems[i].className = 'show';
         match = button;
     }
   }
   return match;
 };
 
-checkLetter();
+
+// 
+// qwerty.addEventListener('click', (event) => {
+//   if(event.target.tagName = 'BUTTON' || event.target.className = 'chosen'){
+//       const button = event.target.className = 'chosen';
+//       const checkLetters = checkLetter();
+//   }
+// })
